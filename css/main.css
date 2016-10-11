@@ -356,5 +356,13 @@ td,
 th {
   padding: 0; }
 
-body {
-  background: green; }
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.logo-landing {
+  padding: 2em; }
+  .logo-landing .logo-text:hover {
+    fill: white; }
