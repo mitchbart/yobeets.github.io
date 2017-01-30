@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700)
+
+html
+	box-sizing: border-box
+
+*, *:before, *:after
+    box-sizing: inherit
+
+body
+  	background: #eee
+  	//text-align: center
+  	font-family: "karla"
+  	//height: 400vh
+  	background: linear-gradient(to left, #ECE9E6 , #FFFFFF)
+
+.page-wrap
+	display: flex
+	justify-content: center
+	align-items: center
+	min-height: 100vh
+
+.quote-container
+	max-width: 600px
+	margin: 10px
+	background: white
+	padding: 40px 50px
+	border-radius: 6px
+	overflow: hidden
+
+#quote
+	h2
+		color: #001f3f
+		font-size: 32px
+
+		@media (max-width: 600px)
+			font-size: 24px
+		
+
+#author
+	color: #B10DC9
+	text-align: right
+	text-transform: uppercase
+
+
+.button-area
+	//text-align: center
+
+.footer
+	position: absolute
+	bottom: 0
+	width: 100%
+	//text-align: center
+
+.fa-twitter
+	//float: right
+	color: #7FDBFF
+	margin-top: .15em
+
+	&:hover
+		color: darken(#7FDBFF, 10%)
+	
+.fa-quote-left
+	color: #B10DC9
+
+.footer
+	text-align: center
+	padding: 30px
+	color: #AAAAAA
+	font-size: 0.9em

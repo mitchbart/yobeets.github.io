@@ -1,0 +1,36 @@
+@import "tools/normalize";
+@import "base";
+@import "buttons";
+
+
+.author {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.quote {
+  animation-duration: 1.5s;
+  animation-name: opacity;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
