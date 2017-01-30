@@ -363,9 +363,9 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: white; }
+  background: #69699A; }
 
-.container {
+.hero {
   height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -378,5 +378,5 @@ body {
   align-items: center; }
 
 .logo-large {
-  width: 500px;
+  width: 600px;
   height: auto; }
