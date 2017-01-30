@@ -363,9 +363,20 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: green; }
+  background: white; }
 
-.logo-landing {
-  padding: 2em; }
-  .logo-landing .logo-text:hover {
-    fill: white; }
+.container {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.logo-large {
+  width: 500px;
+  height: auto; }
