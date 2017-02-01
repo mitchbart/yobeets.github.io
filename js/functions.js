@@ -1,5 +1,5 @@
 const hero = document.querySelector('.hero');
-const text = hero.querySelector('h1');
+const text = hero.querySelector('.logo-large');
 const walk = 30;
 
 function shadow(e) {
@@ -11,6 +11,7 @@ function shadow(e) {
       //console.log(this.offsetLeft);
       //console.log(this, e.target.getBoundingClientRect().left);
       //console.log(e.target);
+      //console.log(x + e.target.offsetLeft);
         x = x + e.target.offsetLeft;
         y = y + e.target.offsetTop;
         //x = e.target.getBoundingClientRect();
@@ -26,7 +27,7 @@ function shadow(e) {
     //text.style.transform = `perspective( 0 ) rotateX( ${xWalk}deg ) rotateY( ${yWalk}deg )`
 
     //console.log(xWalk, yWalk);
-    //console.log(x, y);
+    console.log(x, y);
 
 }
 
