@@ -375,7 +375,19 @@ html {
   align-items: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(to left, #00c6ff, #0072ff); }
+  .hero::before {
+    content: "";
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    mix-blend-mode: multiply; }
 
 @-webkit-keyframes floating {
   from {
@@ -406,7 +418,7 @@ html {
     drop-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15); } }
 
 .logo-large {
-  width: 500px;
+  width: 900px;
   height: auto;
   -webkit-animation-name: floating;
   animation-name: floating;
@@ -416,6 +428,9 @@ html {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out; }
+  @media (max-width: 1000px) {
+    .logo-large {
+      width: 600px; } }
   @media (max-width: 600px) {
     .logo-large {
       width: 400px; } }
