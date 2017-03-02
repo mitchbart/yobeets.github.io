@@ -1,6 +1,6 @@
+/**
 
-
-/**const hero = document.querySelector('.hero');
+const hero = document.querySelector('.hero');
 const text = hero.querySelector('.logo-large');
 const walk = 30;
 
@@ -32,6 +32,5 @@ function shadow(e) {
     console.log(x, y);
 
 }
-
-//hero.addEventListener('mousemove', shadow);
 **/
+//hero.addEventListener('mousemove', shadow);
