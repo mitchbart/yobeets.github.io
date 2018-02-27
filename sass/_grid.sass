@@ -1,21 +1,48 @@
-.item
-  display: grid
-  justify-content: center
-  align-items: center
-  border: 5px solid rbga(0, 0, 0, 0.03)
-  border-radius: 3px
-  font-size: 35px
-  background-color: #ffc600
+
   
 .grid-container
   display: grid
   grid-gap: 20px
-  grid-template-columns: repeat(5, 1fr)
+  padding: 1rem
+  //border: 10px solid lime
+  grid-template-columns: 1fr 7fr 1fr
+  grid-template-rows: 150px auto 100px
+  grid-template-areas: "sidebar-1 content sidebar-2" "sidebar-1 content sidebar-2" "footer footer footer"
 
-.item9
-  background: lime
-  grid-column: span 2
-  grid-row: span 5
+.top-bar
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: repeat(auto-fit, 60px)
+  //justify-content: center
+  //background: orange
 
-.itemSkull
-  grid-column: span 2
+.bar-item
+  //background: orange
+  
+  
+.item
+  display: grid
+  justify-content: center
+  align-items: center
+  border: 5px solid black
+  //border-radius: 3px
+  font-size: 15px
+  background-color: #ffc600
+
+.footer
+  grid-area: footer
+
+.item1
+  grid-area: sidebar-1
+
+.item2
+  grid-area: content
+  padding: 20px
+  font-size: 25px
+
+.item3
+  grid-area: sidebar-2
+
+@media (max-width: 700px)
+  .grid-container
+    grid-template-areas: "sidebar-1 sidebar-2 sidebar-2" "content content content" "footer footer footer"
