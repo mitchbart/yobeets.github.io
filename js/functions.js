@@ -22,36 +22,24 @@ var JSobject = anime({
 
 //fancy word thing
 let pageTitle = document.querySelector(".title")
-charming(pageTitle)
+charming(pageTitle);
 
-console.log(pageTitle);
+//all for title colour change
+var colorArray = ["#FFC312", "#C4E538", "#12CBC4", "#FDA7DF", "#ED4C67", "#ef5777", "#575fcf", "#4bcffa", "#34e7e4", "#34e7e4", "#0be881"];
 
-//get random letter
-var randomChar = pageTitle.innerText[Math.floor(Math.random()*pageTitle.innerText.length)];
-
-console.log(randomChar);
-
-//array of colours 
-var colorArray = ["#FFC312", "#C4E538", "#12CBC4", "#FDA7DF", "#ED4C67"];
-//var randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
+function getRandomNumber () {
+  return Math.floor(Math.random() * pageTitle.innerText.length + 1);
+};
 
 function getRandomColor () {
   return colorArray[Math.floor(Math.random()*colorArray.length)];
 };
 
-//need to get rnadom span element in page title
-
-function getRandomNumber () {
-  return Math.floor(Math.random()*pageTitle.length);
-};
-console.log(getRandomNumber());
-
-
-//some code
-function color (heading) {
-  heading.style.color = getRandomColor();
+function changeColor () {
+  let n = getRandomNumber();
+  let c = getRandomColor();
+  let x = document.querySelector(".char" + n);
+  x.style.color = c;
 };
 
-setInterval(color, 300, pageTitle);
-
-//console.log(randomColor);
+setInterval(changeColor, 10);
