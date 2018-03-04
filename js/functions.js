@@ -4,7 +4,7 @@ var loadObj = { coolnessLevel: '0%' };
 
 var JSobject = anime({
   targets: loadObj,
-  coolnessLevel: '1000%',
+  coolnessLevel: '9001%',
   round: 1,
   easing: 'linear',
   duration: 20000,

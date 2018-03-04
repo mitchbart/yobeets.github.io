@@ -2,16 +2,16 @@
   
 .grid-container
   display: grid
-  grid-gap: 20px
-  padding: 1rem
+  grid-gap: 3px
+  padding: 6rem
   //border: 10px solid lime
   grid-template-columns: 1fr 7fr 1fr
-  grid-template-rows: 150px auto 100px
-  grid-template-areas: "sidebar-1 content sidebar-2" "sidebar-1 content sidebar-2" "footer footer footer"
+  grid-template-rows: auto 150px auto 100px
+  grid-template-areas: "hero hero hero" "sidebar-1 content sidebar-2" "sidebar-1 content sidebar-2" "footer footer footer"
 
 .top-bar
   display: grid
-  grid-gap: 20px
+  grid-gap: 6px
   grid-template-columns: repeat(auto-fit, 60px)
   //justify-content: center
   //background: orange
@@ -24,10 +24,13 @@
   display: grid
   justify-content: center
   align-items: center
-  border: 5px solid black
+  border: 1px dashed #ff6348
   //border-radius: 3px
   font-size: 15px
-  background-color: #EA2027
+  //background-color: #EA2027
+
+.hero
+  grid-area: hero
 
 .footer
   grid-area: footer
@@ -45,4 +48,5 @@
 
 @media (max-width: 700px)
   .grid-container
-    grid-template-areas: "sidebar-1 sidebar-2 sidebar-2" "content content content" "footer footer footer"
+    padding: 0.5rem
+    grid-template-areas: "hero hero hero" "sidebar-1 sidebar-2 sidebar-2" "content content content" "footer footer footer"
