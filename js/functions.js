@@ -7,9 +7,9 @@ var JSobject = anime({
   coolnessLevel: '9001%',
   round: 1,
   easing: 'linear',
-  duration: 20000,
+  duration: 800000,
   update: function() {
-    var el = document.querySelector('#loading pre');
+    var el = document.querySelector('#loading');
     el.innerHTML = JSON.stringify(loadObj);
   }
   //loop: true
@@ -49,7 +49,6 @@ function changeColor () {
   let c = getRandomColor();
   let x = document.querySelector(".char" + n);
   x.style.color = c;
-  
 };
 
 /**function drip() {
@@ -96,3 +95,18 @@ setInterval(changeColor, 10);
     return i * 100;
   }
 });**/
+
+
+var els = document.querySelectorAll('#nodeList .el');
+
+var nodeList = anime({
+  targets: els,
+  translateY: 250,
+  delay: () => { return anime.random(0, 1000); },
+  rotate: function() { return anime.random(-360, 360); },
+  direction: 'alternate',
+  duration: 30,
+  loop: true
+
+});
+
